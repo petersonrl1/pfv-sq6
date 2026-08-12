@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply min-h-screen bg-bg-base font-sans text-text-primary;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(165, 180, 252, 0.32);
+  color: white;
+}
+
+.text-gradient-amber {
+  background-image: linear-gradient(94deg, #f5c16d, #ffb36a);
+  -webkit-background-clip: text;
+  color: transparent;
+}
